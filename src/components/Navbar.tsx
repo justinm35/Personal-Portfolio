@@ -16,9 +16,9 @@ export const Navbar = () => {
             projects
           </li>
         </NavLink>
-        <NavLink to="/resume" className={({isActive})=>(isActive  ? "text-purple-500" : '')}>
+        <NavLink to="/experience" className={({isActive})=>(isActive  ? "text-purple-500" : '')}>
           <li className="hover:text-purple-500 hover:underline cursor-pointer px-3 font-poppins font-extralight text-base decoration-4 underline-offset-8">
-            resume
+            experience
           </li>
         </NavLink>
         <NavLink to="/contact" className={({isActive})=>(isActive  ? "text-purple-500" : '')}>  
