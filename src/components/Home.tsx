@@ -22,13 +22,13 @@ export const Home = () => {
           initial={{ x:-150 ,opacity: 0 }}
           animate={{ x:0, opacity: 1 }}
           exit={{ x:150, opacity: 0 }}
-          className="text-4xl md:text-4xl mt-60 sm:mt-64 leading-relaxed w-full max-w-2xl font-poppins font-bold">
-            Hey there, I'm Justin! <br/> A <Typewriter
-                options={{
-                  strings: ['Software Enginner', 'Globetrotter', 'Problem Solver'],
-                  autoStart: true,
-                  loop: true,
-                }}/> based in Toronto
+          className="text-4xl md:text-4xl mt-60 sm:mt-64 leading-relaxed w-full font-poppins font-bold">
+            Hey there, I'm Justin!
+            <div className="flex">
+            A&nbsp;
+            <Typewriter options={{strings: ['Software Enginner', 'Globetrotter', 'Problem Solver'], autoStart: true,loop: true,}}/>
+            </div> 
+            based in Toronto
         </motion.h1>
         </div>
         <Footer/>
@@ -38,4 +38,5 @@ export const Home = () => {
     </div>
   )
 }
+
 

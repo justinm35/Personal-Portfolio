@@ -6,8 +6,7 @@ import { Resume } from './components/Resume'
 import { Contact } from './components/Contact'
 import { Route, Routes, Outlet } from 'react-router-dom'
 
-export const App =  ()=> {
-
+export const App =()=> {
 
   return (
     <>
@@ -24,3 +23,4 @@ export const App =  ()=> {
     </>
   )
 }
+export default App
