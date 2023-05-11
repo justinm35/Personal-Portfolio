@@ -16,7 +16,8 @@ import { useState, useEffect } from 'react'
 import { GithubOutlined, LinkOutlined } from '@ant-design/icons'
 import { logEvent } from "firebase/analytics"
 import { analytics } from "../main"
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export const Projects = () => {
   useEffect(() => {
@@ -55,7 +56,8 @@ export const Projects = () => {
             variants={variants} 
             className="w-full max-w-5xl md:max-w-3xl flex md:flex-row flex-col mb-10 justify-start items-center">
           <div className="w-fit flex flex-col justify-items-start items-end">
-            <img src={wwlaptop} loading="eager" className="w-full transition object-scale-down hover:scale-100 sm:hover:scale-125 max-w-lg z-10"/>
+            <LazyLoadImage src={wwlaptop} alt="world wander project image" effect="blur" className="w-full transition object-scale-down max-w-lg z-10"/>
+            {/* <img src={wwlaptop} loading="eager" className="w-full transition object-scale-down hover:scale-100 sm:hover:scale-125 max-w-lg z-10"/> */}
           </div>
           <div className="w-full pl-1 md:pl-3 max-w-sm md:max-w-full relative">
             <h3 className=" font-poppins font-semibold text-lg pt-3 md:pt-0 text-zinc-700">World Wander</h3>
@@ -85,7 +87,8 @@ export const Projects = () => {
             variants={variants} 
             className="w-full max-w-5xl md:max-w-3xl flex md:flex-row flex-col mb-16 justify-start items-center">
           <div className="w-fit flex flex-col justify-items-start items-end">
-            <img src={keebinvlaptop} loading="eager" className="w-full transition object-scale-down hover:scale-100 sm:hover:scale-125 max-w-lg z-10 mb-auto"/>
+          <LazyLoadImage src={keebinvlaptop} alt="world wander project image" effect="blur" className="w-full transition object-scale-down  max-w-lg z-10"/>
+            {/* <img src={keebinvlaptop} loading="eager" className="w-full transition object-scale-down hover:scale-100 sm:hover:scale-125 max-w-lg z-10 mb-auto"/> */}
           </div>
           <div className="w-full pl-1 md:pl-3 max-w-sm md:max-w-full relative">
             <h3 className=" font-poppins font-semibold text-lg pt-3 md:pt-0 text-zinc-700">KeebInv</h3>
@@ -117,7 +120,8 @@ export const Projects = () => {
             variants={variants} 
             className="w-full max-w-5xl md:max-w-3xl flex md:flex-row flex-col mb-16 justify-start items-center">
           <div className="w-fit flex flex-col justify-items-start items-end">
-            <img src={rechatlaptop} loading="eager" className="w-full transition object-scale-down hover:scale-100 sm:hover:scale-125 max-w-lg z-10 mb-auto"/>
+          <LazyLoadImage src={rechatlaptop} alt="world wander project image" effect="blur" className="w-full transition object-scale-down max-w-lg z-10"/>
+            {/* <img src={rechatlaptop} loading="eager" className="w-full transition object-scale-down hover:scale-100 sm:hover:scale-125 max-w-lg z-10 mb-auto"/> */}
           </div>
           <div className="w-full pl-1 md:pl-3 max-w-sm md:max-w-full relative">
             <h3 className=" font-poppins font-semibold text-lg pt-3 md:pt-0 text-zinc-700">ReChat Messenger</h3>
@@ -133,7 +137,7 @@ export const Projects = () => {
             </div>
             <div className="flex items-centercenter space-x-2">
               <LinkOutlined style={{ fontSize: '23px', color: '#3f3f46' }} className="pb-2"/>
-              <a className="font-poppins hover:underline text-zinc-700" href="https://keebinv.justinm.dev">keebinv.justinm.dev</a>
+              <a className="font-poppins hover:underline text-zinc-700" href="https://re-chat-nine.vercel.app/login">https://re-chat-nine.vercel.app/login</a>
             </div>
             <p className="font-poppins font-light text-md text-zinc-700 leading-5 pb-1"><span className="font-medium">Stack: </span>React • Next JS • Redis • Next Auth •TailwindCSS • TypeScript • Pusher</p>
             <p className="font-poppins font-light text-md text-zinc-700 leading-5 pb-3"><span className="font-medium">Description: </span>
