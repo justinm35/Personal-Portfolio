@@ -1,18 +1,11 @@
 import { Footer } from "./Footer"
 import { motion } from "framer-motion"
 import Peng from "./Peng"
-import { useEffect } from "react"
-import { logEvent } from "firebase/analytics"
-import { analytics } from "../main"
 import Typewriter from 'typewriter-effect';
 
 
 
 export const Home = () => {
-  useEffect(() => {
-    logEvent(analytics, 'page_view', {name: 'Contact'})
-  },[])
-
 
   return (
     <div className=" max-h-screen absolute -z-10 bottom-0 top-0 left-0 right-0 overflow-hidden">
@@ -22,13 +15,13 @@ export const Home = () => {
           initial={{ x:-150 ,opacity: 0 }}
           animate={{ x:0, opacity: 1 }}
           exit={{ x:150, opacity: 0 }}
-          className="text-4xl md:text-4xl mt-60 sm:mt-64 leading-relaxed w-full font-poppins font-bold">
-            Hey there, I'm Justin!
-            <div className="flex">
+          className="text-3xl md:text-4xl mt-60 sm:mt-64 leading-relaxed w-full font-poppins font-bold">
+            <p>Hey there, I'm Justin!</p>
+            <div className="flex py-2">
             A&nbsp;
             <Typewriter options={{strings: ['Software Enginner', 'Globetrotter', 'Problem Solver'], autoStart: true,loop: true,}}/>
             </div> 
-            based in Toronto
+            <p>based in Toronto</p>
         </motion.h1>
         </div>
         <Footer/>

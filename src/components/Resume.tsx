@@ -1,15 +1,7 @@
 import { AnimatePresence } from "framer-motion"
 import { motion } from "framer-motion"
 import { Footer } from "./Footer"
-import { useEffect } from "react"
-import { logEvent } from "firebase/analytics"
-import { analytics } from "../main"
-
 export const Resume = () => {
-
-  useEffect(() => {
-    logEvent(analytics, 'page_view', {name: 'Resume'})
-  },[])
 
   return (
     <AnimatePresence >
@@ -21,11 +13,11 @@ export const Resume = () => {
       <div className="w-full">
         <ul className="space-y-3">
         <li>
-            <h2 className="font-poppins text-md font-normal text-purple-500 mb-0.5 mt-8">Skills</h2>
+            <h2 className="font-poppins text-md font-normal text-indigo-500 mb-0.5 mt-8">Skills</h2>
             <p className='font-poppins font-semibold text-sm sm:text-md w-full sm:w-full'>HTML/CSS • NodeJS • ReactJS • JavaScript/TypeScript • Redux • RTK Query • Mongoose • ExpressJS • TailwindCSS • MaterialUI • React Router • Puppeteer • Git • Postman</p>
           </li>
           <li>
-          <h2 className="font-poppins text-md font-normal text-purple-500 mb-0.5 mt-8">Experience</h2>
+          <h2 className="font-poppins text-md font-normal text-indigo-500 mb-0.5 mt-8">Experience</h2>
               <div className="w-full flex justify-between font-poppins font-normal mb-0.5 flex-wrap text-zinc-500">
                 <h1 className="text-sm sm:text-md basis-5/6 flex-grow text-zinc-800 font-semibold">Lead Installer & Operations Manager at <span className='underline decoration-2 underline-offset-2'>Thunder Graphics Inc.</span></h1>
                 <h2 className="font-poppins text-zinc-400 text-xs sm:text-sm">Sep 19 - Feb 22</h2>
@@ -51,7 +43,7 @@ export const Resume = () => {
                 and leadership, fostering high levels of team performance and efficiency.</p>
           </li>
           <li>
-          <h2 className="font-poppins text-md font-normal text-purple-500 mb-0.5 mt-8">Education</h2>
+          <h2 className="font-poppins text-md font-normal text-indigo-500 mb-0.5 mt-8">Education</h2>
             <div className="flex justify-items-stretch space-x-20">
               <div className='font-poppins font-normal mb-1.5'>
                 <h3 className="text-sm sm:text-md font-semibold">Business & Entrepenurship</h3>
@@ -67,7 +59,7 @@ export const Resume = () => {
             </div>  
           </li>
           <li>
-          <h2 className="font-poppins text-md font-normal text-purple-500 mb-0.5 mt-8">Soft Skills</h2>
+          <h2 className="font-poppins text-md font-normal text-indigo-500 mb-0.5 mt-8">Soft Skills</h2>
             <p className='font-poppins font-light text-sm sm:text-md w-full sm:w-2/3'>Collaboration • Problem Solving • Leadership • Time Management</p>
           </li>
         </ul>
