@@ -11,7 +11,7 @@ export const Home = () => {
     <div className=" max-h-screen absolute -z-10 bottom-0 top-0 left-0 right-0 overflow-hidden">
       <div className="w-10/12 md:w-3/4 lg:w-3/6 mx-auto">
         <div className="flex">
-        <motion.h1 
+        <motion.h1
           initial={{ x:-150 ,opacity: 0 }}
           animate={{ x:0, opacity: 1 }}
           exit={{ x:150, opacity: 0 }}
@@ -19,8 +19,8 @@ export const Home = () => {
             <p>Hey there, I'm Justin!</p>
             <div className="flex py-2">
             A&nbsp;
-            <Typewriter options={{strings: ['Software Enginner', 'Globetrotter', 'Problem Solver'], autoStart: true,loop: true,}}/>
-            </div> 
+            <Typewriter options={{strings: ['Software Engineer', 'Globetrotter', 'Problem Solver'], autoStart: true,loop: true,}}/>
+            </div>
             <p>based in Toronto</p>
         </motion.h1>
         </div>
